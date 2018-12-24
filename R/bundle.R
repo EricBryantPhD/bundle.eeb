@@ -10,11 +10,11 @@
 bundle <- function() {
   description <- desc::desc(package = "bundle.eeb")
 
-  imports <- parse_deps(description$get("Imports"))
-  remotes <- parse_deps(description$get("Remotes"))
+  imports <- sort(parse_deps(description$get("Imports")))
+  remotes <- sort(parse_deps(description$get("Remotes")))
   deps    <- unique(unlist(tools::package_dependencies(imports)))
-
-  list(imports = imports, remotes = remotes, deps = setdiff(deps, imports))
+  deps    <- sort(setdiff(deps, imports))
+  list(depends = imports, remotes = remotes, depends_downstream = deps)
 }
 
 parse_deps <- function(deps) {

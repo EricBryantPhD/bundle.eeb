@@ -7,15 +7,11 @@ output:
 # My R package bundle
 
 - **Imports:** packages from CRAN.
-- **Suggests:** packages from Bioconductor.
 - **Remotes:** packages from GitHub.
 
 ```r
-# Use remotes to install Imported and Suggested packages
-remotes::install_github("EricEdwardBryant/bundle.eeb", dependencies = TRUE)
-
-# Then install my GitHub packages
-bundle.eeb::install_remotes()
+# Use remotes package to install: install.packages("remotes")
+remotes::install_github("EricEdwardBryant/bundle.eeb")
 ```
 
 # What packages are in the bundle?
