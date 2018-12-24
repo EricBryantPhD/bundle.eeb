@@ -7,8 +7,7 @@ Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports:
-    ape,
+Imports: ape,
     assertthat,
     bookdown,
     broom,
@@ -69,16 +68,14 @@ Imports:
     usethis,
     xml2,
     yaml
-Suggests:
-    BSgenome,
+Suggests: BSgenome,
     Biostrings,
     EBImage,
     msa,
     flowCore
 RoxygenNote: 6.1.1
 
-Remotes:
-    github::EricEdwardBryant/easydb,
+Remotes: github::EricEdwardBryant/easydb,
     github::EricEdwardBryant/rothfreezer,
     github::EricEdwardBryant/screenmill,
     github::EricEdwardBryant/rothSGA,
