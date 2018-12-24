@@ -73,7 +73,7 @@ Imports: ape,
     Biostrings,
     EBImage,
     msa,
-    flowCore
+    flowCore,
     easydb,
     iSTOP,
     mutagenesis,
