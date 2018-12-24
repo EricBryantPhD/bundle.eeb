@@ -7,9 +7,7 @@ Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports:
-  remotes,
+Imports: remotes,
   dplyr
-Remotes:
-  github::EricEdwardBryant/rprofile,
+Remotes: github::EricEdwardBryant/rprofile,
   github::EricEdwardBryant/easydb
