@@ -8,13 +8,8 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports:
-  remotes
+  remotes,
+  dplyr
 Remotes:
   github::EricEdwardBryant/rprofile,
-  github::EricEdwardBryant/easydb,
-  github::EricEdwardBryant/rothfreezer,
-  github::EricEdwardBryant/screenmill,
-  github::EricEdwardBryant/rothSGA,
-  github::EricEdwardBryant/YeastBarcodes,
-  github::EricEdwardBryant/iSTOP,
-  github::EricEdwardBryant/mutagenesis
+  github::EricEdwardBryant/easydb
