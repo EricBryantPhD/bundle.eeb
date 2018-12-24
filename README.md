@@ -16,8 +16,8 @@ remotes::install_github("EricEdwardBryant/bundle.eeb", dependencies = TRUE)
 bundle.eeb::install_remotes()
 ```
 
-What packages?
-==============
+What packages are in the bundle?
+================================
 
 ``` r
 bundle.eeb::bundle()
