@@ -1,7 +1,7 @@
 My R package bundle
 ===================
 
--   **Imports:** packages from CRAN.
+-   **Imports:** packages from CRAN and Bioconductor.
 -   **Remotes:** packages from GitHub.
 
 ``` r
@@ -70,4 +70,24 @@ bundle.eeb::bundle()
     [81] "stats"         "stats4"        "stringdist"    "tidyselect"   
     [85] "tiff"          "tinytex"       "tools"         "utils"        
     [89] "viridisLite"   "whisker"       "withr"         "xfun"         
-    [93] "xtable"        "XVector"
+    [93] "xtable"        "XVector"      
+
+What versions?
+==============
+
+My repositories are configured as follows:
+
+    R        -- R version 3.5.1 (2018-07-02) "Feather Spray"
+    System   -- macOS High Sierra 10.13.6
+    Platform -- x86_64-apple-darwin15.6.0 (64-bit)
+
+    Repositories:
+      https://cran.microsoft.com/snapshot/2018-12-01
+      https://bioconductor.org/packages/3.8/bioc
+      https://bioconductor.org/packages/3.8/data/annotation
+      https://bioconductor.org/packages/3.8/data/experiment
+      https://bioconductor.org/packages/3.8/workflows
+
+    Libraries:
+      /Library/Frameworks/R.framework/Versions/3.5/Resources/library_R-3.5_Bioc-3.8_CRAN-2018-12-01
+      /Library/Frameworks/R.framework/Versions/3.5/Resources/library

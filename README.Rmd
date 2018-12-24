@@ -6,7 +6,7 @@ output:
 
 # My R package bundle
 
-- **Imports:** packages from CRAN.
+- **Imports:** packages from CRAN and Bioconductor.
 - **Remotes:** packages from GitHub.
 
 ```r
@@ -18,4 +18,12 @@ remotes::install_github("EricEdwardBryant/bundle.eeb")
 
 ```{r comment = ""}
 bundle.eeb::bundle()
+```
+
+# What versions?
+
+My repositories are configured as follows:
+
+```{r echo = FALSE, comment = ""}
+rprofile::rprofile(TRUE)
 ```
