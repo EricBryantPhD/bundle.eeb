@@ -20,19 +20,3 @@ bundle <- function() {
 parse_deps <- function(deps) {
   stringr::str_trim(strsplit(deps, "\\s*,\\s*", perl = TRUE)[[1]])
 }
-
-#' Install GitHub remotes
-#'
-#' I had to add this because the remotes are not being installed for some
-#' reason.
-#'
-#' @param ... Further arguments passed to [remotes::install_github]
-#'
-#' @md
-#' @importFrom purrr walk
-#' @importFrom remotes install_github
-#' @export
-
-install_remotes <- function(...) {
-  purrr::walk(bundle()$remotes, remotes::install_github, ...)
-}
