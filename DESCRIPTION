@@ -2,7 +2,7 @@ Package: bundle.eeb
 Title: Eric Edward Bryant's Bundle of R packages
 Version: 0.0.1
 Authors@R: person("Eric", "Bryant", email = "EricEdwardBryant@gmail.com", role = c("aut", "cre"))
-Description: 
+Description: Bundle of my frequently used and authored R packages
 Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
