@@ -1,0 +1,13 @@
+My R package bundle
+===================
+
+See `DESCRIPTION` for list of packages
+
+-   **Imports:** available on CRAN.
+-   **Suggests:** available on Bioconductor.
+-   **Remotes:** available on GitHub.
+
+``` r
+install.packages("remotes")
+remotes::install_github("EricEdwardBryant/bundle.eeb", dependencies = TRUE)
+```
