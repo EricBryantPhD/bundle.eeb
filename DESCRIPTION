@@ -73,12 +73,11 @@ Suggests: BSgenome,
     EBImage,
     msa,
     flowCore
+Remotes: EricEdwardBryant/easydb,
+    EricEdwardBryant/rothfreezer,
+    EricEdwardBryant/screenmill,
+    EricEdwardBryant/rothSGA,
+    EricEdwardBryant/YeastBarcodes,
+    EricEdwardBryant/iSTOP,
+    EricEdwardBryant/mutagenesis
 RoxygenNote: 6.1.1
-
-Remotes: github::EricEdwardBryant/easydb,
-    github::EricEdwardBryant/rothfreezer,
-    github::EricEdwardBryant/screenmill,
-    github::EricEdwardBryant/rothSGA,
-    github::EricEdwardBryant/YeastBarcodes,
-    github::EricEdwardBryant/iSTOP,
-    github::EricEdwardBryant/mutagenesis
