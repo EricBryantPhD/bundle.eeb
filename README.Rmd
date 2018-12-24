@@ -6,15 +6,12 @@ output:
 
 # My R package bundle
 
-See `DESCRIPTION` for list of packages
+- **Imports:** packages from CRAN.
+- **Suggests:** packages from Bioconductor.
+- **Remotes:** packages from GitHub.
 
-- **Imports:** available on CRAN.
-- **Suggests:** available on Bioconductor.
-- **Remotes:** available on GitHub.
-
-```r 
+```r
 # Use remotes to install Imported and Suggested packages
-install.packages("remotes")
 remotes::install_github("EricEdwardBryant/bundle.eeb", dependencies = TRUE)
 
 # Then install my GitHub packages

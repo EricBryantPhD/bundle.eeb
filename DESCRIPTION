@@ -68,17 +68,25 @@ Imports: ape,
     tidyverse,
     usethis,
     xml2,
-    yaml
-Suggests: BSgenome,
+    yaml,
+    BSgenome,
     Biostrings,
     EBImage,
     msa,
     flowCore
-Remotes: EricEdwardBryant/easydb,
-    EricEdwardBryant/rothfreezer,
-    EricEdwardBryant/screenmill,
-    EricEdwardBryant/rothSGA,
-    EricEdwardBryant/YeastBarcodes,
-    EricEdwardBryant/iSTOP,
-    EricEdwardBryant/mutagenesis
+    easydb,
+    iSTOP,
+    mutagenesis,
+    rothfreezer,
+    rothSGA,
+    screenmill,
+    YeastBarcodes
+Remotes:
+    github::EricEdwardBryant/easydb,
+    github::EricEdwardBryant/iSTOP,
+    github::EricEdwardBryant/mutagenesis,
+    github::EricEdwardBryant/rothfreezer,
+    github::EricEdwardBryant/rothSGA,
+    github::EricEdwardBryant/screenmill,
+    github::EricEdwardBryant/YeastBarcodes
 RoxygenNote: 6.1.1

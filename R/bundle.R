@@ -10,11 +10,11 @@
 bundle <- function() {
   description <- desc::desc(package = "bundle.eeb")
 
-  list(
-    cran   = parse_deps(description$get("Imports")),
-    bioc   = parse_deps(description$get("Suggests")),
-    github = parse_deps(description$get("Remotes"))
-  )
+  imports <- parse_deps(description$get("Imports"))
+  remotes <- parse_deps(description$get("Remotes"))
+  deps    <- unique(unlist(tools::package_dependencies(imports)))
+
+  list(imports = imports, remotes = remotes, deps = setdiff(deps, imports))
 }
 
 parse_deps <- function(deps) {
@@ -34,5 +34,5 @@ parse_deps <- function(deps) {
 #' @export
 
 install_remotes <- function(...) {
-  purrr::walk(bundle()$github, remotes::install_github, ...)
+  purrr::walk(bundle()$remotes, remotes::install_github, ...)
 }
