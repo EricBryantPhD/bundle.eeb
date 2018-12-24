@@ -7,12 +7,14 @@ Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: tidyverse
-Remotes: github::EricEdwardBryant/rprofile
-  github::EricEdwardBryant/easydb
-  github::EricEdwardBryant/rothfreezer
-  github::EricEdwardBryant/screenmill
-  github::EricEdwardBryant/rothSGA
-  github::EricEdwardBryant/YeastBarcodes
-  github::EricEdwardBryant/iSTOP
+Imports:
+  remotes
+Remotes:
+  github::EricEdwardBryant/rprofile,
+  github::EricEdwardBryant/easydb,
+  github::EricEdwardBryant/rothfreezer,
+  github::EricEdwardBryant/screenmill,
+  github::EricEdwardBryant/rothSGA,
+  github::EricEdwardBryant/YeastBarcodes,
+  github::EricEdwardBryant/iSTOP,
   github::EricEdwardBryant/mutagenesis
