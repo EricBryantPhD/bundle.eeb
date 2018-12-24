@@ -7,9 +7,6 @@ Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: remotes,
-  roxygen2,
-  dplyr
-Remotes: EricEdwardBryant/rprofile,
-  EricEdwardBryant/easydb
+Imports: remotes, roxygen2, dplyr
+Remotes: EricEdwardBryant/rprofile, EricEdwardBryant/easydb
 RoxygenNote: 6.1.1
