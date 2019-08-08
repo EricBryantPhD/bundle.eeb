@@ -16,7 +16,7 @@ What packages are in the bundle?
 bundle.eeb::bundle()
 ```
 
-    $depends
+    $imports
      [1] "ape"           "assertthat"    "Biostrings"    "bookdown"     
      [5] "broom"         "BSgenome"      "caTools"       "cgdsr"        
      [9] "cli"           "crayon"        "data.table"    "DBI"          
@@ -34,8 +34,8 @@ bundle.eeb::bundle()
     [57] "roxygen2"      "RSQLite"       "rstudioapi"    "Rtsne"        
     [61] "rvest"         "screenmill"    "servr"         "shiny"        
     [65] "stringi"       "stringr"       "testthat"      "tibble"       
-    [69] "tidyr"         "tidyverse"     "usethis"       "xml2"         
-    [73] "yaml"          "YeastBarcodes"
+    [69] "tidyr"         "tidyverse"     "usethis"       "vdiffr"       
+    [73] "xml2"          "yaml"          "YeastBarcodes"
 
     $remotes
     [1] "github::EricEdwardBryant/easydb"       
@@ -46,48 +46,58 @@ bundle.eeb::bundle()
     [6] "github::EricEdwardBryant/screenmill"   
     [7] "github::EricEdwardBryant/YeastBarcodes"
 
-    $depends_downstream
-     [1] "abind"         "backports"     "base"          "base64enc"    
-     [5] "BH"            "bibtex"        "bindrcpp"      "Biobase"      
-     [9] "BiocGenerics"  "bit64"         "bitops"        "blob"         
-    [13] "brew"          "callr"         "cellranger"    "clipr"        
-    [17] "clisymbols"    "commonmark"    "corpcor"       "crosstalk"    
-    [21] "curl"          "digest"        "evaluate"      "fftwtools"    
-    [25] "fs"            "GenomeInfoDb"  "GenomicRanges" "geosphere"    
-    [29] "gh"            "git2r"         "glue"          "graph"        
-    [33] "graphics"      "grDevices"     "grid"          "gtable"       
-    [37] "highr"         "htmltools"     "htmlwidgets"   "httpuv"       
-    [41] "IRanges"       "jpeg"          "later"         "lattice"      
-    [45] "lazyeval"      "locfit"        "markdown"      "Matrix"       
-    [49] "matrixStats"   "memoise"       "methods"       "mgcv"         
-    [53] "mime"          "nlme"          "openssl"       "parallel"     
-    [57] "pillar"        "pkgbuild"      "pkgconfig"     "pkgload"      
-    [61] "plogr"         "plyr"          "png"           "praise"       
-    [65] "promises"      "R.methodsS3"   "R.oo"          "R6"           
-    [69] "rcmdcheck"     "RCurl"         "reshape2"      "rprojroot"    
-    [73] "rrcov"         "Rsamtools"     "rtracklayer"   "S4Vectors"    
-    [77] "scales"        "selectr"       "sessioninfo"   "sourcetools"  
-    [81] "stats"         "stats4"        "stringdist"    "tidyselect"   
-    [85] "tiff"          "tinytex"       "tools"         "utils"        
-    [89] "viridisLite"   "whisker"       "withr"         "xfun"         
-    [93] "xtable"        "XVector"      
+    $downstream
+      [1] "abind"            "backports"        "base"            
+      [4] "base64enc"        "BH"               "bibtex"          
+      [7] "Biobase"          "BiocGenerics"     "bit64"           
+     [10] "bitops"           "blob"             "brew"            
+     [13] "callr"            "cellranger"       "clipr"           
+     [16] "clisymbols"       "commonmark"       "corpcor"         
+     [19] "crosstalk"        "curl"             "diffobj"         
+     [22] "digest"           "ellipsis"         "evaluate"        
+     [25] "fansi"            "fftwtools"        "fontquiver"      
+     [28] "freetypeharfbuzz" "fs"               "gdtools"         
+     [31] "generics"         "GenomeInfoDb"     "GenomicRanges"   
+     [34] "geosphere"        "gh"               "git2r"           
+     [37] "glue"             "graph"            "graphics"        
+     [40] "grDevices"        "grid"             "gtable"          
+     [43] "highr"            "htmltools"        "htmlwidgets"     
+     [46] "httpuv"           "IRanges"          "jpeg"            
+     [49] "later"            "lattice"          "lazyeval"        
+     [52] "locfit"           "markdown"         "Matrix"          
+     [55] "matrixStats"      "memoise"          "methods"         
+     [58] "mgcv"             "mime"             "nlme"            
+     [61] "openssl"          "parallel"         "pillar"          
+     [64] "pkgbuild"         "pkgconfig"        "pkgload"         
+     [67] "plogr"            "plyr"             "png"             
+     [70] "praise"           "progress"         "promises"        
+     [73] "R.methodsS3"      "R.oo"             "R6"              
+     [76] "rcmdcheck"        "RCurl"            "reshape2"        
+     [79] "rprojroot"        "rrcov"            "Rsamtools"       
+     [82] "rtracklayer"      "S4Vectors"        "scales"          
+     [85] "selectr"          "sessioninfo"      "sourcetools"     
+     [88] "stats"            "stats4"           "stringdist"      
+     [91] "tidyselect"       "tiff"             "tinytex"         
+     [94] "tools"            "utils"            "viridisLite"     
+     [97] "whisker"          "withr"            "xfun"            
+    [100] "xtable"           "XVector"         
 
 What versions?
 ==============
 
 My repositories are configured as follows:
 
-    R        -- R version 3.5.1 (2018-07-02) "Feather Spray"
-    System   -- macOS High Sierra 10.13.6
+    R        -- R version 3.6.1 (2019-07-05) "Action of the Toes"
+    System   -- macOS Mojave 10.14.6
     Platform -- x86_64-apple-darwin15.6.0 (64-bit)
 
     Repositories:
-      https://cran.microsoft.com/snapshot/2018-12-01
-      https://bioconductor.org/packages/3.8/bioc
-      https://bioconductor.org/packages/3.8/data/annotation
-      https://bioconductor.org/packages/3.8/data/experiment
-      https://bioconductor.org/packages/3.8/workflows
+      https://cran.microsoft.com/snapshot/2019-07-05
+      https://bioconductor.org/packages/3.9/bioc
+      https://bioconductor.org/packages/3.9/data/annotation
+      https://bioconductor.org/packages/3.9/data/experiment
+      https://bioconductor.org/packages/3.9/workflows
 
     Libraries:
-      /Library/Frameworks/R.framework/Versions/3.5/Resources/library_R-3.5_Bioc-3.8_CRAN-2018-12-01
-      /Library/Frameworks/R.framework/Versions/3.5/Resources/library
+      /Library/Frameworks/R.framework/Versions/3.6/Resources/library_R-3.6_Bioc-3.9_CRAN-2019-07-05
+      /Library/Frameworks/R.framework/Versions/3.6/Resources/library
