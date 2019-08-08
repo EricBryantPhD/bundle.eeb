@@ -80,6 +80,7 @@ Imports: ape,
     rothfreezer,
     rothSGA,
     screenmill,
+    vdiffr,
     YeastBarcodes
 Remotes:
     github::EricEdwardBryant/easydb,
