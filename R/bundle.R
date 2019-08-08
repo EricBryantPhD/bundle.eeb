@@ -14,7 +14,7 @@ bundle <- function() {
   remotes <- sort(parse_deps(description$get("Remotes")))
   deps    <- unique(unlist(tools::package_dependencies(imports)))
   deps    <- sort(setdiff(deps, imports))
-  list(depends = imports, remotes = remotes, depends_downstream = deps)
+  list(imports = imports, remotes = remotes, downstream = deps)
 }
 
 parse_deps <- function(deps) {
