@@ -1,8 +1,11 @@
 Package: bundle.eeb
 Title: Eric Edward Bryant's Bundle of R packages
 Version: 0.0.1
-Authors@R: person("Eric", "Bryant", email = "EricEdwardBryant@gmail.com", role = c("aut", "cre"))
-Description: Bundle of my frequently used R packages. CRAN packages are listed in Imports. Bioconductor packages are listed in Suggests.
+Authors@R:
+    person("Eric", "Bryant", 
+           email = "EricEdwardBryant@gmail.com", 
+           role = c("aut", "cre"))
+Description: Bundle of my frequently used R packages.
 Depends: R (>= 3.3.3)
 License: GPL-3
 Encoding: UTF-8
@@ -67,6 +70,7 @@ Imports: ape,
     tidyr,
     tidyverse,
     usethis,
+    vdiffr,
     xml2,
     yaml,
     BSgenome,
@@ -80,7 +84,6 @@ Imports: ape,
     rothfreezer,
     rothSGA,
     screenmill,
-    vdiffr,
     YeastBarcodes
 Remotes:
     github::EricEdwardBryant/easydb,

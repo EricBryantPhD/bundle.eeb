@@ -1,8 +1,7 @@
 My R package bundle
 ===================
 
--   **Imports:** packages from CRAN and Bioconductor.
--   **Remotes:** packages from GitHub.
+This package streamlines installation of my favorite R packages.
 
 ``` r
 # Use remotes package to install: install.packages("remotes")
@@ -11,6 +10,30 @@ remotes::install_github("EricEdwardBryant/bundle.eeb")
 
 What packages are in the bundle?
 ================================
+
+With `bundle.eeb` built on 2019-11-27, and with the following sytem
+configuration:
+
+    R        -- R version 3.6.1 (2019-07-05) "Action of the Toes"
+    System   -- macOS Mojave 10.14.6
+    Platform -- x86_64-apple-darwin15.6.0 (64-bit)
+
+    Repositories:
+      https://cran.microsoft.com/snapshot/2019-07-05
+      https://bioconductor.org/packages/3.9/bioc
+      https://bioconductor.org/packages/3.9/data/annotation
+      https://bioconductor.org/packages/3.9/data/experiment
+      https://bioconductor.org/packages/3.9/workflows
+
+    Libraries:
+      /Library/Frameworks/R.framework/Versions/3.6/Resources/library_R-3.6_Bioc-3.9_CRAN-2019-07-05
+      /Library/Frameworks/R.framework/Versions/3.6/Resources/library
+
+The following packages will be installed:
+
+-   **Imports:** directly required packages.
+-   **Remotes:** packages installed from a non-CRAN like repository.
+-   **Downstream:** packages required by *Imports*.
 
 ``` r
 bundle.eeb::bundle()
@@ -80,24 +103,4 @@ bundle.eeb::bundle()
      [91] "tidyselect"       "tiff"             "tinytex"         
      [94] "tools"            "utils"            "viridisLite"     
      [97] "whisker"          "withr"            "xfun"            
-    [100] "xtable"           "XVector"         
-
-What versions?
-==============
-
-My repositories are configured as follows:
-
-    R        -- R version 3.6.1 (2019-07-05) "Action of the Toes"
-    System   -- macOS Mojave 10.14.6
-    Platform -- x86_64-apple-darwin15.6.0 (64-bit)
-
-    Repositories:
-      https://cran.microsoft.com/snapshot/2019-07-05
-      https://bioconductor.org/packages/3.9/bioc
-      https://bioconductor.org/packages/3.9/data/annotation
-      https://bioconductor.org/packages/3.9/data/experiment
-      https://bioconductor.org/packages/3.9/workflows
-
-    Libraries:
-      /Library/Frameworks/R.framework/Versions/3.6/Resources/library_R-3.6_Bioc-3.9_CRAN-2019-07-05
-      /Library/Frameworks/R.framework/Versions/3.6/Resources/library
+    [100] "xtable"           "XVector"

@@ -6,8 +6,7 @@ output:
 
 # My R package bundle
 
-- **Imports:** packages from CRAN and Bioconductor.
-- **Remotes:** packages from GitHub.
+This package streamlines installation of my favorite R packages.
 
 ```r
 # Use remotes package to install: install.packages("remotes")
@@ -16,14 +15,19 @@ remotes::install_github("EricEdwardBryant/bundle.eeb")
 
 # What packages are in the bundle?
 
-```{r comment = ""}
-bundle.eeb::bundle()
-```
-
-# What versions?
-
-My repositories are configured as follows:
+With `bundle.eeb` built on `r Sys.Date()`, and with the following sytem
+configuration:
 
 ```{r echo = FALSE, comment = ""}
 rprofile::rprofile(TRUE)
+```
+
+The following packages will be installed:
+
+- **Imports:** directly required packages.
+- **Remotes:** packages installed from a non-CRAN like repository.
+- **Downstream:** packages required by *Imports*.
+
+```{r comment = ""}
+bundle.eeb::bundle()
 ```
