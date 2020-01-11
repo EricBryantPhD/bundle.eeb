@@ -10,7 +10,7 @@ This package streamlines installation of my favorite R packages.
 
 ```r
 # Use remotes package to install: install.packages("remotes")
-remotes::install_github("EricEdwardBryant/bundle.eeb")
+remotes::install_github("EricBryantPhD/bundle.github.ericbryantphd")
 ```
 
 # What packages are in the bundle?
@@ -19,7 +19,11 @@ With `bundle.eeb` built on `r Sys.Date()`, and with the following sytem
 configuration:
 
 ```{r echo = FALSE, comment = ""}
-rprofile::rprofile(TRUE)
+message(
+  R.version.string,
+  "Repositories:", paste("\n ", getOption("repos")),
+  "Libraries:",    paste("\n ", .libPaths())
+)
 ```
 
 The following packages will be installed:
@@ -29,5 +33,5 @@ The following packages will be installed:
 - **Downstream:** packages required by *Imports*.
 
 ```{r comment = ""}
-bundle.eeb::bundle()
+bundle.github.ericbryantphd::bundle()
 ```
