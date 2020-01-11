@@ -1,4 +1,4 @@
-Package: bundle.eeb
+Package: bundle.github.ericbryantphd
 Title: Eric Edward Bryant's Bundle of R packages
 Version: 0.0.1
 Authors@R:
@@ -90,7 +90,6 @@ Remotes:
     github::EricBryantPhD/iSTOP,
     github::EricBryantPhD/mutagenesis,
     github::EricBryantPhD/rothfreezer,
-    github::EricBryantPhD/rothSGA,
     github::EricBryantPhD/screenmill,
     github::EricBryantPhD/YeastBarcodes
 RoxygenNote: 6.1.1
