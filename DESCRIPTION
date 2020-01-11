@@ -86,11 +86,11 @@ Imports: ape,
     screenmill,
     YeastBarcodes
 Remotes:
-    github::EricEdwardBryant/easydb,
-    github::EricEdwardBryant/iSTOP,
-    github::EricEdwardBryant/mutagenesis,
-    github::EricEdwardBryant/rothfreezer,
-    github::EricEdwardBryant/rothSGA,
-    github::EricEdwardBryant/screenmill,
-    github::EricEdwardBryant/YeastBarcodes
+    github::EricBryantPhD/easydb,
+    github::EricBryantPhD/iSTOP,
+    github::EricBryantPhD/mutagenesis,
+    github::EricBryantPhD/rothfreezer,
+    github::EricBryantPhD/rothSGA,
+    github::EricBryantPhD/screenmill,
+    github::EricBryantPhD/YeastBarcodes
 RoxygenNote: 6.1.1
